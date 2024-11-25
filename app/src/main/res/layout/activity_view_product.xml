@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ViewProductActivity"
+    android:background="@color/black"
+    android:padding="16dp"
+    tools:ignore="VisualLintBounds">
+    <ImageView
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/admin1"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_update"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:text="@string/update"
+            android:textColor="#000000"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="@string/delete"
+            android:textColor="@color/black"
+            tools:ignore="ButtonStyle,TextContrastCheck,VisualLintButtonSize" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_container" />
+</RelativeLayout>

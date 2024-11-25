@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_search_product" type="id" />
+    <item name="btn_delete_product" type="id" />
+    <item name="main_layout" type="id" />
+    <item name="btn_back8" type="id" />
+</resources>

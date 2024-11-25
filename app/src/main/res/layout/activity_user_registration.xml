@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:background="#E18652E3"
+    tools:context=".UserRegistration">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape6"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/sign_up"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <!-- User Name -->
+    <EditText
+        android:id="@+id/AD_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        android:minHeight="40dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/email_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck"
+        android:importantForAutofill="no" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/pass_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/confirm_pass_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="8dp"
+        android:hint="@string/confirm_your_password"
+        android:inputType="textPassword"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/phone_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/phone_number"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="phone"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <!-- Delivery Address -->
+    <EditText
+        android:id="@+id/address_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/address"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_delivery_address"
+        android:inputType="textPostalAddress"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FF5722"
+        android:textSize="16sp"
+        tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- Enter Button -->
+    <Button
+        android:id="@+id/BTN_LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#BECDDC39"
+        android:text="@string/enter"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/BTN_Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#BECDDC39"
+        android:minHeight="48dp"
+        android:text="@string/back"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+</LinearLayout>

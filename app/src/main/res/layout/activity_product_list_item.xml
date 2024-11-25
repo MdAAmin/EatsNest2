@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/chicken"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chiken1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="@string/product_name3"
+            android:background="@drawable/edit_text_box"
+            android:textColor="#F30808"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/food_name" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_box"
+            android:drawablePadding="8dp"
+            android:text="@string/product_price3"
+            android:textColor="#F30808"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/food_price"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_box"
+            android:drawablePadding="8dp"
+            android:text="@string/product_quantity3"
+            android:textColor="#F30808"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/quantity"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

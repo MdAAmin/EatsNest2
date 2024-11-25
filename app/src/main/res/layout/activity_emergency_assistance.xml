@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#AD64E684"
+    tools:context=".EmergencyAssistanceActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/shape5"
+        android:text="@string/request_emergency_assistance"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_box"
+        android:hint="@string/enter_your_name1"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/emergencyButton"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape4"
+        android:padding="12dp"
+        android:text="@string/send_emergency_request"
+        android:textColor="#A32092"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn_back7"
+        style="@style/MyButtonStyle"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0"
+        android:text="@string/back"
+        tools:ignore="InefficientWeight,TextContrastCheck" />
+
+
+</LinearLayout>

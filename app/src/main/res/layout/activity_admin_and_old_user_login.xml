@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="8dp"
+    android:background="#B59C27B0"
+    tools:context=".AdminLoginAndOldUser">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape6"
+        android:padding="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/welcome_back_valued_user_n_we_re_glad_to_see_you_again"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/AD_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_name2"
+        android:inputType="textPersonName"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/pass_ed"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="8dp"
+        android:hint="@string/enter_your_password2"
+        android:inputType="textPassword"
+        android:minHeight="40dp"
+        android:paddingTop="8dp"
+        android:textColorHint="#FFFF5722"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BTN_LOGIN"
+
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FFC107"
+            android:minHeight="48dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/user"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck,TouchTargetSizeCheck"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/BTN_ADMIN"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:layout_marginStart="8dp"
+            android:text="@string/admin"
+            android:textColor="#C2185B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTN_Back"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/back2"
+        android:textColor="#C2185B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>
